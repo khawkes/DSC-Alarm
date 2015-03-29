@@ -747,6 +747,7 @@ class Plugin(indigo.PluginBase):
 		elif cmd == '510':
 			# Keypad LED State Update
 			leds = int(dat, 16)
+			self.logger.logError(u"LEDs value: %s" % (leds))
 
 			if leds & 1 > 0:
 				self.updateKeypad(0, u'LEDReady', 'on')
@@ -1070,6 +1071,18 @@ class Plugin(indigo.PluginBase):
 					self.updateKeypad(0, u'LEDArmed', ledState)
 				elif ledName == 'Trouble':
 					self.updateKeypad(0, u'LEDTrouble', ledState)
+				elif ledName == 'Bypass':
+					self.updateKeypad(0, u'LEDBypass', ledState)
+				elif ledName == 'Memory':
+					self.updateKeypad(0, u'LEDMemory', ledState)
+				elif ledName == 'Program':
+					self.updateKeypad(0, u'LEDProgram', ledState)
+				elif ledName == 'Fire':
+					self.updateKeypad(0, u'LEDFire', ledState)
+				elif ledName == 'Backlight':
+					self.updateKeypad(0, u'LEDBacklight', ledState)
+				elif ledName == 'AC':
+					self.updateKeypad(0, u'LEDAC', ledState)
 
 		elif cmd == '904':
 			self.logger.log(3, u"Beep Status")

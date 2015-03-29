@@ -148,6 +148,36 @@
 				<TriggerLabel>Trouble LED</TriggerLabel>
 				<ControlPageLabel>Trouble LED</ControlPageLabel>
 			</State>			
+            <State id="LEDBypass">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>Bypass LED</TriggerLabel>
+                <ControlPageLabel>Bypass LED</ControlPageLabel>
+            </State>			
+            <State id="LEDAC">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>AC LED</TriggerLabel>
+                <ControlPageLabel>AC LED</ControlPageLabel>
+            </State>			
+            <State id="LEDFire">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>Fire LED</TriggerLabel>
+                <ControlPageLabel>Fire LED</ControlPageLabel>
+            </State>			
+            <State id="LEDMemory">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>Memory LED</TriggerLabel>
+                <ControlPageLabel>Memory LED</ControlPageLabel>
+            </State>
+            <State id="LEDBacklight">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>Backlight LED</TriggerLabel>
+                <ControlPageLabel>Backlight LED</ControlPageLabel>
+            </State>
+            <State id="LEDProgram">
+                <ValueType boolType="OnOff">Boolean</ValueType>
+                <TriggerLabel>Program LED</TriggerLabel>
+                <ControlPageLabel>Program LED</ControlPageLabel>
+            </State>
 		</States>
 	</Device>
 	
